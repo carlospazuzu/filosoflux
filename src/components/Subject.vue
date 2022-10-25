@@ -1,6 +1,6 @@
 <template>
     <div>
-        <table :id="sId" @mouseover="doHighligh" @mouseleave="ceaseHighligh" :class="{main: hovering, oferta: this.oferta != null && hovering}">
+        <table :id="sId" @mouseover="doHighlight" @mouseleave="ceaseHighlight" :class="{main: hovering, oferta: this.oferta != null && hovering}">
             <tr>
                 <td class="subject" rowspan="3">{{subject}}</td>
                 <td class="carga" rowspan="2">{{carga}}</td>
@@ -19,14 +19,14 @@ export default {
     name: 'Subject',
     props: ['subject', 'carga', 'cr', 'sId', 'pre', 'oferta'],
     methods: {
-      doHighligh() {
+      doHighlight() {
         this.hovering = true;
         const preRequisites = this.pre.split(',');
         preRequisites.map( (subject) => document.getElementById(subject).classList.add('pre'));
         
         // this.pre.
       },
-      ceaseHighligh() {
+      ceaseHighlight() {
         this.hovering = false;
         const preRequisites = this.pre.split(',');
         preRequisites.map( (subject) => document.getElementById(subject).classList.remove('pre'));
@@ -44,7 +44,7 @@ export default {
 table {
     border: 1px solid #000;
     border-collapse: collapse;
-    margin: 20px 5px;
+    margin: 20px 2px;
     cursor: pointer;    
 }
 

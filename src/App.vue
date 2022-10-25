@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
+      <div class="col-2"></div>
       <div class="col-2">
         <Subject subject="Seminário de Introd. ao Curso de Fil." carga="15" cr="01" sId="seminario" />
         <Subject subject="Iniciação à Fil. e à Red. Filosófica" carga="75" cr="05" sId="iniciacao" ref="iniciacao" />
@@ -40,12 +41,35 @@
         <Subject subject="Metodologia Filosófica" carga="75" cr="05" sId="metfilosofica" pre="filosmoderna,teoriaconhecimento2,logica1"/>
         <Subject subject="Tóp. Esp. em His. da Fil. Moderna" carga="30" cr="02" sId="topespfilmoderna" pre="filosmoderna"/>
         <Subject subject="Metodologia do Ens. de Filosofia" carga="60" cr="04" sId="metensfilos" pre="didatica,filosmoderna,ontologia2,teoriasetica"/>
+        <Subject subject="Filosofia da Linguagem" carga="60" cr="04" sId="filoslinguagem" pre="teoriaconhecimento2,ontologia2"/>
+        <Subject subject="Estágio Curricular Superv. I" carga="75" cr="05" sId="estagio1" pre="didatica"/>
+        <Subject subject="Ativ. Complem." carga="40" cr=" " sId="ativcomp"/>
       </div>
       <div class="col-2">
+        <Subject subject="História da Filosofia Contemp. II" carga="60" cr="04" sId="filoscontemp2" pre="filoscontemp1"/>
         <Subject subject="Filosofia da Educação" carga="60" cr="04" sId="filoseduc" pre="filosmoderna"/>
+        <Subject subject="Seminário de Filosofia (Opt.)" carga="30" cr="02" sId="seminariofilos" oferta="true" />
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Estágio Curricular Superv. II" carga="75" cr="05" sId="estagio2" pre="didatica,avaliacao,filoscontemp1,teoriaconhecimento2,ontologia2"/>
+        <Subject subject="Ativ. Complem." carga="40" cr=" " sId="ativcomp"/>
       </div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
+      <div class="col-2">
+        <Subject subject="Filosofia no Brasil e na América Lat." carga="60" cr="04" sId="filosbrasil" pre="filoscontemp2"/>
+        <Subject subject="Tópicos Especiais (Opt.)" carga="30" cr="02" sId="topespopt" oferta="true" />
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Estágio Curricular Superv. III" carga="120" cr="08" sId="estagio3" pre="estagio2"/>
+        <Subject subject="TCC I" carga="30" cr="02" sId="tcc1" pre="filoscontemp2,teoriasetica,filoslinguagem,ontologia2,teoriaconhecimento2,antfilos"/>
+      </div>
+      <div class="col-2">
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Optativa" carga="60" cr="04" sId="optativa" oferta="true" />
+        <Subject subject="Tópicos Especiais (Opt.)" carga="30" cr="02" sId="topespopt" oferta="true" />
+        <Subject subject="Estágio Curricular Superv. IV" carga="120" cr="08" sId="estagio4" pre="estagio3"/>
+        <Subject subject="TCC II" carga="60" cr="04" sId="tcc2" pre="tcc1"/>
+      </div>
+      <div class="col-2"></div>      
     </div>
   </div>
 </template>
